@@ -33,7 +33,7 @@
 	
 			case 'createproduto':
 				
-				isTheseParametersAvailable(array('descricao','quantidade','valor', 'dataEntrada'));
+				isTheseParametersAvailable(array('descricao','quantidade','valor','dataEntrada','imagem'));
 				
 				$db = new DbOperation();
 				
@@ -41,7 +41,8 @@
 					$_POST['descricao'],
 					$_POST['quantidade'],
 					$_POST['valor'],
-					$_POST['dataEntrada']
+					$_POST['dataEntrada'],
+					$_POST['imagem']
 				);
 				
 				if($result){
